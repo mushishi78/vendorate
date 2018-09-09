@@ -1,0 +1,27 @@
+{
+  "name": "vendorate",
+  "version": "1.0.0",
+  "description": "A wrapper around browserify to vendor node_module dependencies into a single file.",
+  "bin": {
+    "vendorate": "./vendorate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mushishi78/vendorate.git"
+  },
+  "keywords": [
+    "browserify",
+    "vendor",
+    "demodularize"
+  ],
+  "author": "Max White",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mushishi78/vendorate/issues"
+  },
+  "homepage": "https://github.com/mushishi78/vendorate#readme",
+  "dependencies": {
+    "browserify": "^16.2.2",
+    "digest-stream": "^2.0.0"
+  }
+}
