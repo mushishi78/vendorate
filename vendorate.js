@@ -11,8 +11,8 @@ const digestStream = require('digest-stream')
 const moduleName = process.argv[2]
 const exposeAs = process.argv[3]
 
-const temp1File = `vendor.${moduleName}.temp1.js`
-const temp2File = `vendor.${moduleName}.temp2.js`
+const temp1File = `Vendor.${exposeAs}.temp1.js`
+const temp2File = `Vendor.${exposeAs}.temp2.js`
 
 fs.writeFileSync(temp1File, `// Vendorated with https://github.com/mushishi78/vendorate
 window.Vendor = window.Vendor || {};
@@ -30,6 +30,6 @@ b.bundle()
 
 writeStream.on('finish', function () {
     fs.unlinkSync(temp1File)
-    fs.renameSync(temp2File, `vendor.${moduleName}.${digest}.js`)
+    fs.renameSync(temp2File, `Vendor.${exposeAs}.${digest}.js`)
 })
 

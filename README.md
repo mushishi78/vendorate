@@ -14,5 +14,5 @@ npm install --save-dev vendorate
 npx vendorate some-library SomeLibrary
 ```
 
-This will output a file like `vendor.some-library.ab3692a8sb82bas2.js`. When used,
-the library is exposed globally under `vendor.SomeLibrary`.
+This will output a file like `Vendor.SomeLibrary.ab3692a8sb82bas2.js`. When used,
+the library is exposed globally under `Vendor.SomeLibrary`.
